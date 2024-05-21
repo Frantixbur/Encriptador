@@ -1,0 +1,241 @@
+body {
+    background: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0%;
+}
+
+.titulo-div {
+    text-align: center;
+}
+
+.titulo {
+    font-style: normal;
+    font-size: 40px;
+    color: rgb(60,64,67);
+}
+
+.aclaracion {
+    text-align: center;
+    font-size: 18px;
+}
+
+.divisiones {
+    display: flex;
+    position: relative;
+    min-height: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    gap: 10px;
+    height: 100%
+}
+
+.entrada-texto {
+    position: relative;
+    left: 2%;
+}
+
+#textoEntrada {
+    resize: none;
+    background: transparent;
+    background-color: rgba(110, 110, 110, 0.12);
+    border: 1px solid;
+    border-color: rgb(218,220,224);
+    border-radius: 8px;
+    outline: none;
+    color: rgb(60,64,67);
+    font-family: inherit;
+    overflow: auto hidden;
+    white-space: pre-wrap;
+    padding: 5px;
+    margin: 0px;
+    font-size: 24px;
+    line-height: 32px;
+    width: 400px;
+    height: 260px;
+    min-height: 256px; /* Altura mínima inicial */
+}
+
+.botones {
+    position: absolute;
+    left: 41%;
+    bottom: 45%;
+}
+
+.boton {
+    color: rgb(22, 92, 190);
+    background-color: rgba(66,133,244,.12);
+    border-color: rgb(218,220,224);
+    padding: 12px 23px;
+    width: 230px;
+    height: 55px;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    text-size-adjust: 100%;
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: .0107142857em;
+    font-weight:580;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+  
+.boton:hover {
+    color: rgb(23,78,166);
+    background-color: rgba(26, 115, 232, 0.247);
+}
+  
+.boton:active {
+    color: rgb(23,78,166);
+    background-color: rgba(26, 115, 232, 0.404);
+}
+
+.BotonEncriptar {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.BotonEncriptar img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.BotonDesencriptar {
+    width: 100%;
+}
+
+.BotonDesencriptar img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.parte-z1 {
+    position: relative;
+    left: 32%;
+}
+
+#textoReemplazado {
+    resize: none;
+    background: transparent;
+    background-color: rgba(110, 110, 110, 0.12);
+    border: 1px solid;
+    border-color: rgb(218,220,224);
+    border-radius: 8px;
+    outline: none;
+    color: rgb(60,64,67);
+    font-family: inherit;
+    overflow: auto hidden;
+    white-space: pre-wrap;
+    padding: 5px;
+    margin: 0px;
+    font-size: 24px;
+    line-height: 32px;
+    width: 400px;
+    height: 260px;
+    min-height: 128px;
+}
+
+.botonCopiar {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.botonCopiar img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+footer {
+    position: absolute;
+    display: block;
+    padding: none;
+    color: rgb(60,64,67);
+    background-color: rgba(110, 110, 110, 0.50);
+    border: none;
+    text-align: center;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    top: 100%;
+    width: 100%;
+}
+
+#nombre {
+    text-transform: capitalize;
+}
+
+.correo {
+    color: rgb(23,78,166);;
+    text-decoration: none;
+    font-weight: bold;
+}
+.correo:hover {
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 600px) {
+    .titulo {
+        font-size: 24px;
+    }
+
+    .aclaracion {
+        font-size: 16px;
+    }
+
+    .divisiones {
+        flex-direction: column;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .entrada-texto, .parte-z1 {
+        width: 100%;
+        left: 0; 
+        padding: 0;
+    }
+
+    #textoEntrada, #textoReemplazado {
+        width: 100%;
+        font-size: 18px;
+        height: auto;
+    }
+
+    .botones {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .boton {
+        width: 80%;
+        font-size: 18px;
+        padding: 10px 15px; 
+        margin-bottom: 10px;
+    }
+
+    .botonCopiar {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    footer {
+        position: static;
+        width: 100%;
+        font-size: 14px;
+        padding: 10px 0;
+    }
+}

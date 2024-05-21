@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="icon" href="img/ico-pagina.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="titulo-div">
+            <h1 class="titulo">Encriptador de Texto</h1>
+        </div>
+    </header>
+    <main>
+
+    <!-- INSTRUCCIONES DE USO -->
+        <div class="aclaracion">
+            <p><strong>No se aceptan</strong> mayúsculas ni caracteres especiales.</p>
+        </div>
+
+    <!-- CENTRO DIVIDIDO EN 3 -->    
+        <div class="divisiones">
+
+        <!-- ENTRADA DE TEXTO -->
+            <div class="entrada-texto">
+                <textarea id="textoEntrada" style="height: 256px;" required placeholder="Escriba aquí su texto..."></textarea>
+            </div>
+
+        <!-- BOTONES -->
+            <div class="botones">
+                <div class="BotonEncriptar">
+                    <button class="boton" onclick="encriptarTexto()">
+                        <img src="img/ico-lock.png" alt="Encriptar texto">
+                        Encriptar
+                    </button>
+                </div>
+                <div class="BotonDesencriptar">
+                    <button class="boton" onclick="desencriptarTexto()">
+                        <img src="img/ico-unlock.png" alt="Desencriptar texto">
+                        Desencriptar
+                    </button>
+                </div>
+            </div>
+
+        <!-- PARTE Z1 -->    
+            <div class="parte-z1">
+                
+            <!-- SALIDA DE TEXTO -->
+                <div class="salida-texto">
+                    <textarea id="textoReemplazado" readonly placeholder="Ningún mensaje fue encontrado"></textarea>
+                </div>
+
+            <!-- BOTON DE COPIAR -->
+                <div class="botonCopiar">
+                    <button id="botonCopiar" class="boton" onclick="copiarTexto()">
+                        <img src="img/ico-copy.png" alt="Copiar resultado">
+                        Copiar
+                    </button>
+                </div>
+            </div>
+        </div>    
+    </main>
+    <footer>
+        <p>
+            Desarrollado por&nbsp;
+            <span id="nombre"> Franco Chirino</span>.
+        </p>
+        <p>
+            Correo:&nbsp;
+            <a class="correo" href="mailto:chirinofranco59@gmail.com">PUSH chirinofranco59@gmail.com</a>.
+        </p>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
